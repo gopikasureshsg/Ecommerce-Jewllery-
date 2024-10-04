@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useCart } from './CartContext'; 
+
 import './view .css';
 
 const ProductDetail = () => {

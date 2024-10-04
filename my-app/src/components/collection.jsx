@@ -3,6 +3,7 @@ import axios from 'axios';
 import './collection.css';
 import { Link } from 'react-router-dom';
 
+
 const ProductShowcase = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
