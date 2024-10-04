@@ -1,0 +1,255 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+
+.product-card {
+  position: relative;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.sale-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #4bab55;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  z-index: 1;
+}
+
+.product-image {
+  width: 150px;
+  height: 100px;
+  object-fit:cover; 
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 576px) {
+  .product-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.price-section {
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+
+.new-price {
+  color: #333;
+  font-weight: bold;
+}
+
+.buy-now-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #369551;
+}
+
+
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-background {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  filter: brightness(60%); 
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.hero-background:hover {
+  transform: scale(1.05);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: fadeIn 2s ease;
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  animation: fadeIn 3s ease;
+}
+
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-button, .cta-button-outline {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+}
+
+.cta-button {
+  background-color: #62a25f;
+  color: white;
+  border: none;
+}
+
+.cta-button:hover {
+  background-color: #4e8c49;
+}
+
+.cta-button-outline {
+  background-color: transparent;
+  color: #62a25f;
+  border: 2px solid #62a25f;
+}
+
+.cta-button-outline:hover {
+  background-color: #62a25f;
+  color: white;
+}
+
+
+
+.social-icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.social-icons a:hover {
+  color: #d32f2f;
+}
+
+
+.testimonials {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.testimonials h3 {
+  color: #62a25f;
+  margin-bottom: 30px;
+}
+
+.testimonial-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 10px;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-card h5 {
+  margin-top: 10px;
+  color: #d32f2f;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-button, .cta-button-outline {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .hero-overlay {
+    padding: 0 20px;
+  }
+}

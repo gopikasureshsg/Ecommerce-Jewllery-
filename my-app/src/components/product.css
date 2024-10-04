@@ -1,0 +1,14 @@
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .carousel-caption h3 {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .carousel-caption p {
+    color: #f0f0f0;
+  }
+  

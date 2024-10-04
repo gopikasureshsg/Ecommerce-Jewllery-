@@ -1,0 +1,106 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f7f4;
+}
+
+
+.main-header {
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-content {
+  z-index: 1;
+  max-width: 800px;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.main-header p {
+  font-size: 1.2rem;
+}
+
+.orna-journey {
+  padding: 50px 0;
+  background-color: white;
+}
+
+.orna-journey h2 {
+  text-align: center;
+  color: #431818;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.journey-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.journey-content .content-block {
+  flex-basis: 45%;
+  margin-bottom: 30px;
+}
+
+
+.journey-content .content-block img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+  border-radius: 8px;
+}
+
+.journey-content .content-block h3 {
+  font-size: 1.5rem;
+  color: #481010;
+  margin-bottom: 15px;
+}
+
+.journey-content .content-block p {
+  font-size: 1rem;
+  color: #666;
+}
+
+
+@media (max-width: 768px) {
+  .journey-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .journey-content .content-block {
+    flex-basis: 100%;
+  }
+
+  .main-header h1 {
+    font-size: 2rem;
+  }
+
+  .main-header p {
+    font-size: 1rem;
+  }
+}

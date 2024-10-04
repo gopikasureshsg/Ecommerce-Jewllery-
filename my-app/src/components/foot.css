@@ -1,0 +1,51 @@
+/* Footer Styling */
+.footer {
+  background-color: #a7daae; 
+  padding: 40px 0;
+  position: relative; 
+  z-index: 0; 
+  clear: both; 
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #510b0b; 
+  margin-bottom: 15px;
+}
+
+.footer p,
+.footer a {
+  color: #153e09; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #d32f2f;
+}
+
+ul.list-unstyled {
+  padding-left: 0;
+  list-style-type: none; 
+}
+
+.footer a {
+  display: block; 
+  margin-bottom: 10px;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+@media (max-width: 768px) {
+  .footer .col-md-4 {
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+}
+
+

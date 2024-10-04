@@ -1,0 +1,63 @@
+/* Badge container styling */
+.badge-container {
+    border: 2px solid #62a25f;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .badge-container:hover {
+    border-color: #d32f2f; 
+    transform: translateY(-25px); 
+  }
+  
+  .badge-content {
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  .badge-content p {
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #62a25f; 
+  }
+  
+  .badge-content h6 {
+    font-weight: normal;
+    font-weight: bold;
+    color: #d32f2f; 
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .badge-icon {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    margin-top: 50px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .badge-container {
+      width: auto;
+      margin-bottom: 20px;
+    }
+  
+    .badge-icon {
+      width: 40px;
+    }
+  }
+  
